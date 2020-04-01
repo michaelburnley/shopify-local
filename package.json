@@ -1,0 +1,24 @@
+{
+	"name": "endless-theme",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Michael Burnley",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.9.0",
+		"@babel/preset-env": "^7.9.0",
+		"@babel/preset-es2015": "^7.0.0-beta.53",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-changed": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-sass": "^4.0.2"
+	},
+	"dependencies": {
+		"babel-polyfill": "^6.26.0"
+	}
+}
