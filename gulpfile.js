@@ -3,6 +3,7 @@ const sass = require("gulp-sass");
 const concat = require("gulp-concat");
 const changed = require("gulp-changed");
 const babel = require("gulp-babel");
+const livereload = require("gulp-livereload");
 
 task("images", function() {
 	return src("images/**")
@@ -29,6 +30,7 @@ task("js", function() {
 });
 
 task("watch", function() {
+	livereload.listen();
 	watch("styles/**/*.scss", series("sass"));
 	watch("scripts/**/*.js", series("js"));
 });
